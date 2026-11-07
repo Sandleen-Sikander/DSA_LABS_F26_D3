@@ -1,0 +1,14 @@
+#pragma once
+#include<iostream>
+using namespace std;
+template <typename T>
+class AbstractQueue {
+public:
+	virtual void enQueue(T value) = 0;
+	virtual T deQueue() = 0;
+	virtual T front() const = 0;
+	virtual bool isEmpty() const = 0;
+	virtual bool isFull() const = 0;
+	virtual ~AbstractQueue() {}
+};
+
